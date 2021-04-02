@@ -4,12 +4,8 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import NavBar from './components/NavBar';
-import Profile from './components/Profile/Profile';
-import About from './components/About/About';
-import Dashboard from './components/Dashboard/Dashboard';
 import PrivateRoute from './PrivRoute';
 import { AuthContext } from "./context/auth";
 

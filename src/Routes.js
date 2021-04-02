@@ -8,7 +8,7 @@ import {
 import NavBar from './components/NavBar';
 import PrivateRoute from './PrivRoute';
 import { AuthContext } from "./context/auth";
-
+import About from 'componenets/About';
 
 export default function Routes(props) {
     return (
@@ -16,7 +16,9 @@ export default function Routes(props) {
           <BrowserRouter>
             <NavBar />
             <Switch>
-              <Route path="/about" />
+              <Route path="/about">
+              <About />
+              </Route>
               <PrivateRoute path="/profile" />
               <PrivateRoute path="/dashboard" />
             </Switch>

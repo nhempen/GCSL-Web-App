@@ -11,6 +11,7 @@ const Blogs = () => {
       }}
     >
       <h1>Welcome to GeeksforGeeks Blogs</h1>
+      <p>Lemme Tell you WHAUUt</p>
     </div>
   );
 };

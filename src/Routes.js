@@ -2,9 +2,9 @@ import React from "react";
 import './App.css'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import About from './pages/About/About';
+import About from './pages/About';
 import Blogs from './pages/blogs';
-import signUp from './pages/signup';
+import SignUp from './pages/signup';
 
 
 export default function Routes(props) {

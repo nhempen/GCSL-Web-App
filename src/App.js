@@ -5,7 +5,7 @@ import Routes from './Routes';
 function App(props) {
   return (
       <div className="wrapper">
-        <h1>GCSL</h1>
+        <h1>GCSL Test</h1>
         <BrowserRouter>
         <Routes />
         </BrowserRouter>

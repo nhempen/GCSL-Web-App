@@ -8,7 +8,7 @@ import {
 import NavBar from './components/NavBar';
 import PrivateRoute from './PrivRoute';
 import { AuthContext } from "./context/auth";
-import About from 'components/About';
+import About from './components/About';
 
 export default function Routes(props) {
     return (

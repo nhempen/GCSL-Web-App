@@ -1,0 +1,11 @@
+pipeline {
+    agent{ label 'webui' }
+
+    stages {
+        stage('Build') {
+            steps {
+                ./Jenkins/scripts/dep.sh
+            }
+        }
+    }
+}

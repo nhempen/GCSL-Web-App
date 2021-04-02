@@ -1,38 +1,37 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import { useAuth } from '../context/auth';
-
-export default function NavBar(props) {
-  const isAuthenticated = useAuth();
-  return(
-    isAuthenticated ? (
-          <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/profile">profile</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">dashboard</Link>
-            </li>
-          </ul>
-        </nav>
-    ) : (
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-    )
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from './NavbarElements';
+  
+const Navbar = () => {
+  return (
+    <>
+      <Nav>
+        <Bars />
+        <NavMenu>
+          <NavLink to='/about' activeStyle>
+            About
+          </NavLink>
+          <NavLink to='/blogs' activeStyle>
+            Blogs
+          </NavLink>
+          <NavLink to='/sign-up' activeStyle>
+            Sign Up
+          </NavLink>
+          {/* Second Nav */}
+          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+        </NavMenu>
+        <NavBtn>
+          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+        </NavBtn>
+      </Nav>
+    </>
   );
-}
+};
+  
+export default Navbar;

@@ -1,30 +1,22 @@
 import React from "react";
 import './App.css'
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Profile from './components/Profile/Profile';
-import About from './components/About/About';
-import Dashboard from './components/Dashboard/Dashboard';
-import PrivateRoute from './PrivRoute';
-import { AuthContext } from "./context/auth";
+import About from './pages/About/About';
+import Blogs from './pages/blogs';
+import signUp from './pages/signup';
 
 
 export default function Routes(props) {
     return (
-        <AuthContext.Provider value={false}>
           <BrowserRouter>
             <NavBar />
             <Switch>
-              <Route path="/about" />
-              <PrivateRoute path="/profile" />
-              <PrivateRoute path="/dashboard" />
+            <Route path='/' exact component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/blogs' component={Blogs} />
+            <Route path='/sign-up' component={SignUp} />
             </Switch>
           </BrowserRouter>
-        </AuthContext.Provider>
     );
   }

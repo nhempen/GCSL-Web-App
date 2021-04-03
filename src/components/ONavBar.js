@@ -17,14 +17,14 @@ const Navbar = () => {
           <NavLink to='/about' activeStyle>
             About
           </NavLink>
-          <NavLink to='/blogs' activeStyle>
-            Blogs
+          <NavLink to='/sign-up' activeStyle>
+            Sign Up
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signout'>Sign out</NavBtnLink>
+          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

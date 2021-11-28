@@ -8,7 +8,7 @@ const About = () => {
           height: '100vh'
         }}
       >
-        <h1>GeeksforGeeks is a Computer Science portal for geeks.</h1>
+        <h1>GCSL is a Gamified Cyber Security Labs Platform.</h1>
       </div>
     );
   };

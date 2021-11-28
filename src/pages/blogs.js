@@ -5,8 +5,8 @@ const Blogs = () => {
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
+        justifyContent: 'Left',
+        alignItems: 'Left',
         height: '100vh'
       }}
     >
